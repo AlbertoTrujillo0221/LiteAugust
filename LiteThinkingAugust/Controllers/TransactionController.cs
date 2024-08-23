@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.UseCases.Transactions.Queries.GetTransactions;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LiteThinkingAugust.Controllers
 {
@@ -8,7 +9,9 @@ namespace LiteThinkingAugust.Controllers
         [Route("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            
+            var query = new GetTransactionsQuery();
+            var result = await this.Mediator.Send(query);
+            return this.FromResult(result);
         }
     }
 }

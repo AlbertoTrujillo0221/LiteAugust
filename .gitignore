@@ -10,3 +10,6 @@
 /LiteThinkingAugust/obj
 /Shared/obj
 /Shared/bin/Debug/net8.0
+/Application/bin/Debug/net8.0
+/Domain/bin/Debug/net8.0
+/Infrastructure/bin/Debug/net8.0

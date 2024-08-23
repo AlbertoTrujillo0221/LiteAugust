@@ -2,6 +2,6 @@
 {
     public class GetTransactionsQueryDto
     {
-        public List<GetTransactionsQueryDto>? Transactions { get; set; }
+        public List<GetTransactionsQueryValueDto> Transactions { get; set; }
     }
 }
