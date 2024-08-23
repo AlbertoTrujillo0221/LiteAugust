@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Shared.Core;
 
 namespace LiteThinkingAugust.Controllers
 {
@@ -8,9 +9,8 @@ namespace LiteThinkingAugust.Controllers
     {
         private IMediator? _mediator;
 
-        protected IMediator Mediator => this._mediator;
+        protected IMediator Mediator => this._mediator ??= EngineContext.Current.Resolve<IMediator>();
 
-        protected IMapper Mapper;
-        
+        protected IMapper Mapper => EngineContext.Current.Resolve<Mapper>();        
     }
 }
