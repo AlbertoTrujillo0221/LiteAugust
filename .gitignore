@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Application/obj
+/Domain/obj
+/Infrastructure/obj
+/LiteThinkingAugust/bin/Debug/net8.0
+/LiteThinkingAugust/obj
+/Shared/obj
