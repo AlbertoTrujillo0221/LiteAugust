@@ -2,7 +2,7 @@
 {
     public class GetTransactionsQueryValueDto
     {
-        public int Id { get; set; }
-        public int Value { get; set; }
+        public Guid Id { get; set; }
+        public string Title { get; set; }
     }
 }
